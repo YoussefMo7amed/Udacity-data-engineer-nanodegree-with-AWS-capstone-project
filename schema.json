@@ -1,0 +1,69 @@
+{
+    "fact_immigration": {
+        "immigration_id": "INT",
+        "cic_id": "BIGINT",
+        "year": "INT",
+        "month": "INT",
+        "city_code": "CHAR(3)",
+        "state_code": "CHAR(2)",
+        "mode": "INT",
+        "visa": "INT",
+        "arrive_date": "TIMESTAMP",
+        "departure_date": "TIMESTAMP",
+        "country": "CHAR(13)"
+    },
+    "dim_immigration_personal": {
+        "immi_personal_id": "INT",
+        "cic_id": "BIGINT",
+        "citizen_country": "INT",
+        "residence_country": "INT",
+        "birth_year": "INT",
+        "gender": "CHAR(2)"
+    },
+    "dim_immigration_airline": {
+        "immi_airline_id": "INT",
+        "cic_id": "BIGINT",
+        "airline": "string",
+        "admin_num": "BIGINT",
+        "flight_number": "string",
+        "visa_type": "CHAR(2)"
+    },
+    "dim_temperature": {
+        "dt": "date",
+        "city": "string",
+        "country": "string",
+        "avg_temp": "FLOAT",
+        "avg_temp_uncertainty": "FLOAT",
+        "year": "INT",
+        "month": "INT"
+    },
+    "dim_demog_population": {
+        "demog_pop_id": "INT",
+        "city": "CHAR(3)",
+        "state": "CHAR(2)",
+        "male_population": "INT",
+        "female_population": "INT",
+        "num_veterans": "INT",
+        "foreign_born": "INT",
+        "race": "string"
+    },
+    "dim_demog_statistics": {
+        "demog_stat_id": "INT",
+        "city": "CHAR(3)",
+        "state": "CHAR(2)",
+        "median_age": "INT",
+        "avg_household_size": "FLOAT"
+    },
+    "country_code": {
+        "country_id": "INT",
+        "country": "string"
+    },
+    "state_code": {
+        "state_code": "CHAR(2)",
+        "state ": "string"
+    },
+    "city_code": {
+        "city_code": "CHAR(3)",
+        "city": "string"
+    }
+}
